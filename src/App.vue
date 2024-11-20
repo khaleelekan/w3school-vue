@@ -2,9 +2,15 @@
 
 <template>
   <h1>{{ message }}</h1>
-  <food-item />
-  <food-item />
-  <food-item />
+  <food-item 
+  food-name="Apples"
+  food-desc="apples can come in red and green"/>
+  <food-item
+   food-name="Pizza" 
+   food-desc="apples can come in red and green"/>
+  <food-item 
+  food-name="Rice" 
+  food-desc="apples can come in red and green"/>
 </template>
 
 <script >
@@ -18,14 +24,12 @@ export default{
 
 </script>
 <style >
-  #app > div {
+ #app > div {
     border: dashed black 1px;
     display: inline-block;
+    width: 120px;
     margin: 10px;
     padding: 10px;
     background-color: lightgreen;
   }
-  #app > div:hover {
-  cursor: pointer;
-}
 </style>

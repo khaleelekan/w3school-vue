@@ -1,8 +1,7 @@
 <template>
     <div @:click="increment">
-        <h2>{{ name }}</h2>
-        <p>{{ message }}</p>
-        <div id="red">{{ count }}</div>
+        <h2>{{ foodName }}</h2>
+        <h2>{{ foodDesc }}</h2>
     </div>
     
 </template>
@@ -11,6 +10,9 @@
 
 
 export default{
+    props:[
+        'foodName','foodDesc'
+    ],
     data(){
         return{
             name: 'Apples',
