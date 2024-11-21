@@ -39,14 +39,12 @@ export default{
     },
     data(){
         return{
-            name: 'Apples',
-            message: 'I like apples',
-            count: 0
+           foodIsFavorite: this.isFavorite
         }
     },
     methods:{
-        increment(){
-            this.count++;
+        toggleFavorite(){
+            this.foodIsFavorite = !this.foodIsFavorite
         }
     }
 }
